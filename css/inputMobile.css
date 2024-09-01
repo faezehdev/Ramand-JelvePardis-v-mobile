@@ -180,10 +180,10 @@
 
 
   .Toggles .toggle-item:nth-child(1){
-    transform-origin: -7px 33px;
+    transform-origin: 33px -1px;
   }
   .Toggles .toggle-item:nth-child(3){
-    transform-origin: 7px 41px;
+    transform-origin: 15px 9px;
   }
   header .Menu-link{
     transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
