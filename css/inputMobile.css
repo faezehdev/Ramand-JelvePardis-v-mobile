@@ -448,3 +448,19 @@ footer .Address p{
   line-height: 18.78px;
   color: #DADADA;
 }
+
+
+.section1 .imgS::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212223;
+  transform-origin: top;
+  transition: 1s ease;
+}
+
+.activeImg::after{
+  transform: scaleY(0);
+}
