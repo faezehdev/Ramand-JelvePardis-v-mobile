@@ -689,6 +689,14 @@ video {
   z-index: 1;
 }
 
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
 .z-\[999\] {
   z-index: 999;
 }
@@ -741,6 +749,19 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-\[10\%\] {
+  margin-bottom: 10%;
+}
+
+.mb-\[1em\] {
+  margin-bottom: 1em;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -753,12 +774,20 @@ video {
   margin-left: 2em;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mr-5 {
   margin-right: 1.25rem;
+}
+
+.mr-\[1\.8em\] {
+  margin-right: 1.8em;
 }
 
 .mr-auto {
@@ -769,8 +798,44 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-\[\.5em\] {
+  margin-top: .5em;
+}
+
+.mt-\[\.8em\] {
+  margin-top: .8em;
+}
+
+.mt-\[1\.5em\] {
+  margin-top: 1.5em;
+}
+
+.mt-\[1\.8em\] {
+  margin-top: 1.8em;
+}
+
+.mt-\[1em\] {
+  margin-top: 1em;
+}
+
+.mt-\[2\.5em\] {
+  margin-top: 2.5em;
+}
+
+.mt-\[2em\] {
+  margin-top: 2em;
+}
+
+.mt-\[4em\] {
+  margin-top: 4em;
+}
+
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-\[2em\] {
+  margin-bottom: 2em;
 }
 
 .box-border {
@@ -872,12 +937,32 @@ video {
   display: none;
 }
 
+.h-\[10\%\] {
+  height: 10%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[15\%\] {
+  height: 15%;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .h-\[5vh\] {
   height: 5vh;
+}
+
+.h-\[70\%\] {
+  height: 70%;
 }
 
 .h-\[80\%\] {
@@ -886,6 +971,10 @@ video {
 
 .h-\[95vh\] {
   height: 95vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -908,6 +997,18 @@ video {
   width: 80%;
 }
 
+.w-\[88\%\] {
+  width: 88%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[95\%\] {
+  width: 95%;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -928,8 +1029,9 @@ video {
   width: 100%;
 }
 
-.w-\[88\%\] {
-  width: 88%;
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .flex-shrink {
@@ -974,6 +1076,16 @@ video {
 
 .translate-x-\[100\%\] {
   --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[100\%\] {
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[270deg\] {
+  --tw-rotate: 270deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1463,8 +1575,20 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
+.gap-\[1\.8em\] {
+  gap: 1.8em;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1911,9 +2035,23 @@ video {
   border-style: none;
 }
 
+.border-b-\[b6\] {
+  border-bottom-color: b6;
+}
+
 .border-b-b2 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(169 169 169 / var(--tw-border-opacity));
+}
+
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-l-b2 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(169 169 169 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2065,6 +2203,38 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-\[\.5em\] {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.py-\[1\.8em\] {
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+.py-\[2\.5em\] {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.pb-\[\.2em\] {
+  padding-bottom: .2em;
+}
+
+.pb-\[1\.5em\] {
+  padding-bottom: 1.5em;
+}
+
+.pb-\[3em\] {
+  padding-bottom: 3em;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2129,14 +2299,33 @@ video {
   font-family: IRANSansWeb400, IRANSansWeb400;
 }
 
+.font-IRANSansWeb500 {
+  font-family: IRANSansWeb500, IRANSansWeb500;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -2155,6 +2344,10 @@ video {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -2229,8 +2422,16 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.leading-16\.41 {
+  line-height: 16.41px;
+}
+
 .leading-18\.78 {
   line-height: 18.78px;
+}
+
+.leading-21\.91 {
+  line-height: 21.91px;
 }
 
 .leading-24 {
@@ -2241,13 +2442,41 @@ video {
   line-height: 24.93px;
 }
 
+.leading-25\.04 {
+  line-height: 25.04px;
+}
+
+.leading-37\.57 {
+  line-height: 37.57px;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-b1 {
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-b14 {
+  --tw-text-opacity: 1;
+  color: rgb(246 248 248 / var(--tw-text-opacity));
 }
 
 .text-b3 {
   --tw-text-opacity: 1;
   color: rgb(70 70 70 / var(--tw-text-opacity));
+}
+
+.text-b4 {
+  --tw-text-opacity: 1;
+  color: rgb(33 34 35 / var(--tw-text-opacity));
+}
+
+.text-b6 {
+  --tw-text-opacity: 1;
+  color: rgb(107 107 107 / var(--tw-text-opacity));
 }
 
 .text-gray3 {
@@ -2258,6 +2487,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow1 {
+  --tw-text-opacity: 1;
+  color: rgb(255 236 135 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3188,6 +3422,107 @@ footer .Address p{
   color: #DADADA;
 }
 
+.Home-Mobile .Section-1 .swiper-first .Text p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "IRANSansWeb400";
+  color: #F6F8F8;
+  width: 90%;
+}
+
+.swiper-first .swiper-slide{
+  position: relative;
+}
+
+.swiper-first .swiper-slide::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(33, 34, 35, .6) 0%, rgba(33, 34, 35, 0.2) 100%);
+}
+
+.Product-C .Section-1 .Banner::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(33, 34, 35, .6) 0%, rgba(33, 34, 35, 0.2) 100%);
+}
+
+.Product-C .Section-1 .Banner{
+  position: relative;
+}
+
+.Product-C .Top{
+  justify-content: flex-end;
+}
+
+.Product-C .Top .Left{
+  margin-left: 2em;
+}
+
+.Product-C .Section-2 .Text p,
+.Product-C .Section-3 .Text p{
+  color: #DADADA;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  font-family: "IRANSansWeb400";
+}
+
+.Home-Mobile .Box-About p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18.78px;
+  text-align: center;
+  font-family: "IRANSansWeb400";
+  color: #6B6B6B;
+}
+
+.Home .Section-7{
+  margin-left: 1.2em;
+}
+
+.swiper-gallery,
+.swiper-gallery .swiper-slide,
+.swiper-gallery .swiper-slide img{
+  height: 630px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Home-Mobile .Clr-Container span{
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  opacity: 0;
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+}
+
+.Home-Mobile .Clr-Container .Text p{
+  color: #464646;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.04px;
+  text-align: center;
+  font-family: "IRANSansWeb400";
+}
+
 @media (min-width: 480px) {
   .sm\:container {
     width: 100%;
@@ -3247,6 +3582,10 @@ footer .Address p{
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:hover .group-hover\:bg-\[\#0000002c\] {
+  background-color: #0000002c;
 }
 
 .group.Open .group-\[\&\.Open\]\:visible {
