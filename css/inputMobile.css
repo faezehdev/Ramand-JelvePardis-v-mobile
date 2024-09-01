@@ -56,28 +56,15 @@
   font-family: "Roboto200";
   src: url("../_fonts/Roboto-Light.ttf") format("truetype");
   font-weight: 200;
-  font-family: "IRANSansWeb500";
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot");
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
-    url("../../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
-    url("../../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
-  font-weight: 500;
+
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto300";
   src: url("../_fonts/Roboto-Medium.ttf") format("truetype");
-  font-family: "IRANSansWeb400";
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
-    url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
-  font-weight: 400;
+
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }

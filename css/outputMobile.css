@@ -709,8 +709,25 @@ video {
   clear: none;
 }
 
+.m-16 {
+  margin: 4rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .box-border {
@@ -824,6 +841,10 @@ video {
   width: weird-and-invalid;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -862,6 +883,12 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1782,9 +1809,19 @@ video {
   border-style: none;
 }
 
+.border-b-b1 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(218 218 218 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-b4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 34 35 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1907,9 +1944,18 @@ video {
   padding-right: 1.5em;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-left {
@@ -1966,6 +2012,28 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-IRANSansWeb400 {
+  font-family: IRANSansWeb400, IRANSansWeb400;
+}
+
+.font-IRANSansWeb500 {
+  font-family: IRANSansWeb500, IRANSansWeb500;
+}
+
+.font-Roboto500 {
+  font-family:  Roboto500;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2042,6 +2110,21 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-b1 {
+  --tw-text-opacity: 1;
+  color: rgb(218 218 218 / var(--tw-text-opacity));
+}
+
+.text-b2 {
+  --tw-text-opacity: 1;
+  color: rgb(169 169 169 / var(--tw-text-opacity));
+}
+
+.text-b7 {
+  --tw-text-opacity: 1;
+  color: rgb(246 248 248 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2353,6 +2436,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2494,18 +2581,6 @@ video {
 
   font-weight: 200;
 
-  font-family: "IRANSansWeb500";
-
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot");
-
-  src: url("../../_fonts/IRANSansFaNum-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansFaNum-Medium.woff") format("woff"),
-    url("../../_fonts/IRANSansFaNum-Medium.woff2") format("woff2"),
-    url("../../_fonts/IRANSansFaNum-Medium.ttf") format("truetype");
-
-  font-weight: 500;
-
   font-style: normal;
 
   font-display: swap;
@@ -2516,17 +2591,7 @@ video {
 
   src: url("../_fonts/Roboto-Medium.ttf") format("truetype");
 
-  font-family: "IRANSansWeb400";
-
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot");
-
-  src: url("../../_fonts/IRANSansFaNum-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansFaNum-Regular.woff") format("woff"),
-    url("../../_fonts/IRANSansFaNum-Regular.woff2") format("woff2"),
-    url("../../_fonts/IRANSansFaNum-Regular.ttf") format("truetype");
-
-  font-weight: 400;
+  font-weight: 300;
 
   font-style: normal;
 
@@ -3011,6 +3076,12 @@ footer .Address p{
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 480px) {
