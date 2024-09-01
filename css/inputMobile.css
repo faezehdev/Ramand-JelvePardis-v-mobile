@@ -464,3 +464,12 @@ footer .Address p{
 .activeImg::after{
   transform: scaleY(0);
 }
+
+.pause {
+  opacity: 1;
+}
+
+.play {
+  opacity: 0;
+  display: none;
+}
