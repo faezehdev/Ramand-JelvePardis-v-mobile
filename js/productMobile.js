@@ -1,14 +1,3 @@
-  // Enable Scroll
-
-const lenis = new Lenis()
-
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
 
   gsap.to('.Section-1 .bg-Color',{
     ease:"none",
@@ -31,8 +20,8 @@ requestAnimationFrame(raf)
  y:0,
  stagger:.2,
  scrollTrigger: {
-  trigger:'.Section-3',
-  start: "top 90%",  
+  trigger:'.Section-2',
+  start: "top 70%",  
   end:"bottom bottom" 
 },
 })
@@ -42,7 +31,7 @@ requestAnimationFrame(raf)
    y:0,
    scrollTrigger: {
     trigger:'.Section-3',
-    start: "top 90%",  
+    start: "top 70%",  
     end:"bottom bottom" 
   },
   })
@@ -52,7 +41,7 @@ requestAnimationFrame(raf)
    y:0,
    scrollTrigger: {
     trigger:'.Section-3',
-    start: "top 90%", 
+    start: "top 70%", 
     end:"bottom bottom" 
   },
   })
@@ -62,7 +51,7 @@ requestAnimationFrame(raf)
    y:0,
    scrollTrigger: {
     trigger:'.Section-3',
-    start: "top 90%", 
+    start: "top 70%", 
     end:"bottom bottom" 
   },
   })
@@ -71,7 +60,7 @@ requestAnimationFrame(raf)
     height:0,
    scrollTrigger: {
     trigger:'.Section-3',
-    start: "top 90%", 
+    start: "top 70%", 
     end:"bottom bottom" 
   },
   })

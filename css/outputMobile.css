@@ -759,6 +759,10 @@ video {
   margin-bottom: auto;
 }
 
+.mb-\[\.8em\] {
+  margin-bottom: .8em;
+}
+
 .mb-\[10\%\] {
   margin-bottom: 10%;
 }
@@ -779,8 +783,8 @@ video {
   margin-bottom: 5em;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
+.mb-\[8em\] {
+  margin-bottom: 8em;
 }
 
 .ml-5 {
@@ -793,10 +797,6 @@ video {
 
 .ml-auto {
   margin-left: auto;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
 }
 
 .mr-5 {
@@ -815,12 +815,20 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-\[\.5em\] {
   margin-top: .5em;
 }
 
 .mt-\[\.8em\] {
   margin-top: .8em;
+}
+
+.mt-\[1\.2em\] {
+  margin-top: 1.2em;
 }
 
 .mt-\[1\.5em\] {
@@ -849,6 +857,14 @@ video {
 
 .mt-\[5em\] {
   margin-top: 5em;
+}
+
+.mt-\[6em\] {
+  margin-top: 6em;
+}
+
+.mt-\[8em\] {
+  margin-top: 8em;
 }
 
 .mt-auto {
@@ -970,6 +986,14 @@ video {
   height: 1px;
 }
 
+.h-\[270px\] {
+  height: 270px;
+}
+
+.h-\[499px\] {
+  height: 499px;
+}
+
 .h-\[50\%\] {
   height: 50%;
 }
@@ -994,10 +1018,6 @@ video {
   height: 95vh;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -1009,10 +1029,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[499px\] {
-  height: 499px;
 }
 
 .w-\[30px\] {
@@ -1625,10 +1641,6 @@ video {
   gap: 1.25rem;
 }
 
-.gap-9 {
-  gap: 2.25rem;
-}
-
 .gap-\[\.5em\] {
   gap: .5em;
 }
@@ -2103,14 +2115,13 @@ video {
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-l-b2 {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(169 169 169 / var(--tw-border-opacity));
-}
-
 .border-t-b1 {
   --tw-border-opacity: 1;
   border-top-color: rgb(218 218 218 / var(--tw-border-opacity));
+}
+
+.bg-\[\#0000002c\] {
+  background-color: #0000002c;
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2307,6 +2318,11 @@ video {
   padding-bottom: 2em;
 }
 
+.py-\[3em\] {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
 .pb-\[\.2em\] {
   padding-bottom: .2em;
 }
@@ -2394,11 +2410,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-\[11px\] {
@@ -2920,6 +2931,10 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-\[\.8s\] {
+  transition-delay: .8s;
+}
+
 .delay-\[1s\] {
   transition-delay: 1s;
 }
@@ -3316,7 +3331,7 @@ main.ProductCat-Container .swiper-slide-active .Title h2{
 }
 
 main.ProductCat-Container .swiper-pagination-bullet,
-main.Product-C .swiper-pagination-bullet{
+main.Product-Mobile .swiper-pagination-bullet{
   width: 1px;
   height: 12px;
   transition: all .5s ease;
@@ -3329,16 +3344,16 @@ main.Product-C .swiper-pagination-bullet{
 }
 
 main.ProductCat-Container .swiper-pagination-bullet-active,
-main.Product-C .swiper-pagination-bullet-active{
+main.Product-Mobile .swiper-pagination-bullet-active{
   background-color: #FFEC87;
   height: 25px;
 }
 
-main.Product-C .Banner .Overlay{
+main.Product-Mobile .Banner .Overlay{
   background: linear-gradient(90deg, rgba(33, 34, 35, 0) 0%, rgba(33, 34, 35, 0.55) 31.77%, rgba(33, 34, 35, 0.75) 49.48%, rgba(33, 34, 35, 0.55) 70.31%, rgba(33, 34, 35, 0) 100%);
 }
 
-main.Product-C .GallerySlider .IMG::before{
+main.Product-Mobile .GallerySlider .IMG::before{
   content: '';
   position: absolute;
   left: 0;
@@ -3350,15 +3365,15 @@ main.Product-C .GallerySlider .IMG::before{
   background: linear-gradient(0deg, rgba(70, 70, 70, 0.5) 0%, rgba(70, 70, 70, 0) 100%);
 }
 
-main.Product-C .swiper-button-prev::after,
-main.Product-C .swiper-button-next::after{
+main.Product-Mobile .swiper-button-prev::after,
+main.Product-Mobile .swiper-button-next::after{
   font-size: 24px;
 }
 
-main.Product-C .Section-2 .Text p,
-main.Product-C .Section-3 .Title h2,
-main.Product-C .Section-3 .Text p,
-main.Product-C .Section-3 a,
+main.Product-Mobile .Section-2 .Text p,
+main.Product-Mobile .Section-3 .Title h2,
+main.Product-Mobile .Section-3 .Text p,
+main.Product-Mobile .Section-3 a,
 .Home .Clr-Container span,
 .Home .Clr-Container p,
 .Home .Clr-Container a,
@@ -3376,16 +3391,6 @@ main.Product-C .Section-3 a,
   -moz-transition:all .8s ease ;
   -ms-transition:all .8s ease ;
   -o-transition:all .8s ease ;
-  font-family: "IRANSansWeb700";
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot");
-  src: url("../../_fonts/IRANSansWeb(FaNum)_Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff") format("woff"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"),
-    url("../../_fonts/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 h1 {
@@ -3568,7 +3573,7 @@ footer .Address p{
   background: linear-gradient(90deg, rgba(33, 34, 35, .6) 0%, rgba(33, 34, 35, 0.2) 100%);
 }
 
-.Product-C .Section-1 .Banner::before{
+.Product-Mobile .Section-1 .Banner::before{
   content: '';
   position: absolute;
   left: 0;
@@ -3579,20 +3584,20 @@ footer .Address p{
   background: linear-gradient(90deg, rgba(33, 34, 35, .6) 0%, rgba(33, 34, 35, 0.2) 100%);
 }
 
-.Product-C .Section-1 .Banner{
+.Product-Mobile.Section-1 .Banner{
   position: relative;
 }
 
-.Product-C .Top{
+.Product-Mobile .Top{
   justify-content: flex-end;
 }
 
-.Product-C .Top .Left{
+.Product-Mobile .Top .Left{
   margin-left: 2em;
 }
 
-.Product-C .Section-2 .Text p,
-.Product-C .Section-3 .Text p{
+.Product-Mobile .Section-2 .Text p,
+.Product-Mobile .Section-3 .Text p{
   color: #DADADA;
   font-size: 14px;
   font-weight: 400;
@@ -3643,6 +3648,21 @@ footer .Address p{
   line-height: 25.04px;
   text-align: center;
   font-family: "IRANSansWeb400";
+}
+
+.Product-Mobile .GallerySlider .IMG::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(0deg, rgba(70, 70, 70, 0.5) 0%, rgba(70, 70, 70, 0) 100%);
+}
+
+.Product-Mobile .GallerySlider .IMG{
+  position: relative;
 }
 
 @media (min-width: 480px) {
