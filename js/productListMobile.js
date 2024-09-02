@@ -7,7 +7,7 @@ Productss.forEach(p=>{
       height:0,
       scrollTrigger: {
         trigger:p,
-        start: "top 60%",  
+        start: "top 80%",  
         end:"bottom bottom" 
       },
     })
@@ -17,20 +17,8 @@ Productss.forEach(p=>{
        y:0,
        scrollTrigger: {
         trigger:p,
-        start: "top 60%",  
+        start: "top 80%",  
         end:"bottom bottom" 
       },
       })
 })
-
-// Enable Scroll
-
-const lenis = new Lenis()
-
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
