@@ -1,0 +1,85 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634"> 
+    <member name="social" type="view" postsql="select * from [db.social] where TypeID=245"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat1" parentid="209914" postsql="select * from [db.productCat1] where parentid=209914"/> 
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دسته‌بندی محصولات</title>
+    <meta name="description" content="دسته‌بندی محصولات">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputMobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/f-style-mobile.css">
+</head>
+<body class="bg-b4">
+    <main class="productCat1-Mobile overflow-hidden">
+   <!-- HEADER -->
+   <basis core="call" file="menu-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+   <!-- HEADER -->
+   <div class="ProductCats w-full flex flex-col justify-start items-start mt-[5em]">
+    <div class="TitleP mx-auto w-[90%] flex justify-center items-center">
+        <h1 class="font-Roboto500 font-medium text-sm leading-16.41 text-b7 text-center">
+            Product Category
+        </h1>
+    </div>
+    <div class="Products w-[90%] mx-auto flex flex-col justify-start items-start mt-[4em] gap-[1.5em]">
+        <basis core="print" datamembername="db.productCat1">
+            <layout>
+                @child
+            </layout>
+            <face>
+        <a href="@link" alt="@title" title="@title" class="Product w-full flex justify-center items-start ">
+            <div class=" w-full group gap-3
+            flex justify-center items-center relative flex-col ">
+            <div class="top w-full h-[10%] flex justify-end gap-2">
+                <span class="Name w-max h-fit  leading-14.06 text-b2
+                font-Roboto500 text-xs font-medium ">
+                     PRODUCTS
+                 </span>
+                <span class="Line w-[34px] my-auto h-[1px] bg-b2"></span>
+                <span class="Current h-fit leading-14.06 text-b2
+                font-Roboto500 text-xs font-medium ">02</span>
+            </div>
+                <div class="IMG w-full h-[90%] overflow-hidden flex justify-end items-end relative">
+                    <img src="[##cms.cms.cdn##]/images/@catid.jpg" alt="@title" title="@title" class=" h-full duration-[.8s]
+                    w-full object-cover">
+                    <div class="Overlay absolute left-0 bottom-0 z-1 w-full h-full 
+                    group-hover:bg-[#0000002c] duration-[.8s]
+                  flex justify-start items-end">
+                        <div class="Title overflow-hidden w-full flex mb-[10%] justify-start items-center py-[1.8em]">
+                            <h2 class="font-IRANSansWeb500 translate-y-[100%] opacity-0
+                             font-medium mr-[1.8em] duration-[.8s] delay-[1s]
+                             text-xl leading-31.03 text-b1">
+                               @title
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
+                    left-0 right-0 h-full w-full"></div>
+                </div>
+            
+            </div>
+           </a>
+     
+            </face>
+        </basis>
+           
+    </div>
+    <a href="[##cms.cms.cdn##]/images/catalogue.pdf" download=""
+     class="mx-auto font-IRANSansWeb400 text-[11px] duration-[.8s]  py-[2em] mb-[3em]
+    font-normal leading-[17.22px] text-b1
+    border-b-[1px] border-b-[b6] pb-[.2em]">
+    دانلود کاتالوگ‌های محصولات
+    </a>
+   
+<basis core="call" file="footer-v-mobile.inc" pageindex="[##cms.cms.pageindex##]"  />
+   </div>
+    </main>
+    <basis core="call" file="script-mobile.inc" />
+    <script src="[##cms.cms.cdn##]/js/productCatMobile.js"></script>
+</body>
+</html>

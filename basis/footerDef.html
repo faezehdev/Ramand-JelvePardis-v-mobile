@@ -1,0 +1,70 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634"> 
+    <member name="contactus" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634"> 
+    <member name="social" type="view" postsql="select * from [db.social] where TypeID=245"/> 
+</basis>
+<div class="Footer-mobile flex justify-center items-center w-full h-[5vh] bg-b1">
+    <footer class="Footer w-full h-full flex justify-center items-center ">
+        <div class="footer w-full flex justify-center h-full items-center ">
+            <div class="Top w-full flex justify-center items-end h-[50%] ">
+                <span class="Icon goStart w-[90%] mr-auto flex justify-start 
+                 items-center hover:cursor-pointer">
+
+                    <svg class="rotate-[270deg]" width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.27734 1L10.7774 10.5001L1.27734 20.0002" stroke="#212223" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </span>
+            </div>
+            <div class="Bottom w-full flex justify-end  items-end  ">
+                <div class="Socials  w-[90%] ml-auto flex justify-end 
+                 h-full  items-center gap-2">
+                 <basis core="print" datamembername="db.contactus">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="TypeID=240">
+                    <a href="tel:@Answer" title="ramandJelvePardis" alt="ramandJelvePardis" class="Social-link w-auto flex justify-center items-center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.35213 8.69661L5.8475 9.18015C7.53304 8.33414 8.57422 7.36234 9.18015 5.8475L8.71361 3.34492L9.59551 1H11.8683C12.5516 1 13.0896 1.5646 12.9875 2.24016C12.7328 3.92668 11.9817 6.98454 9.78609 9.18015C7.48038 11.4859 4.15954 12.4864 2.33185 12.8841C1.62606 13.0377 1 12.4871 1 11.7648V9.59292L3.35213 8.69661Z" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </a>
+                    </face>
+                 </basis>
+                 <basis core="print" datamembername="db.social">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber=2">
+                    <a href="https://t.me/@largetext" title="ramandJelvePardis" alt="ramandJelvePardis" class="Social-link w-auto flex justify-center items-center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6008 4.92896L2.80078 7.62895L5.50078 8.52895M10.6008 4.92896L5.50078 8.52895M10.6008 4.92896L8.20078 11.229L5.50078 8.52895" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 13.3289C10.3137 13.3289 13 10.6425 13 7.32886C13 4.01515 10.3137 1.32886 7 1.32886C3.68629 1.32886 1 4.01515 1 7.32886C1 10.6425 3.68629 13.3289 7 13.3289Z" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                              
+                    </a>
+                    </face>
+                 </basis>
+                 <basis core="print" datamembername="db.social">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="RowNumber=1">
+                    <a href="https://instagram.com/@largetext" title="ramandJelvePardis" alt="ramandJelvePardis" class="Social-link w-auto flex justify-center items-center">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.9987 9.32454C8.47143 9.32454 9.66536 8.13061 9.66536 6.65788C9.66536 5.18512 8.47143 3.99121 6.9987 3.99121C5.52594 3.99121 4.33203 5.18512 4.33203 6.65788C4.33203 8.13061 5.52594 9.32454 6.9987 9.32454Z" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1 9.32462V3.99129C1 2.15035 2.49239 0.657959 4.33333 0.657959H9.66666C11.5076 0.657959 13 2.15035 13 3.99129V9.32462C13 11.1656 11.5076 12.658 9.66666 12.658H4.33333C2.49239 12.658 1 11.1656 1 9.32462Z" stroke="#212223" stroke-width="0.9"/>
+                            <path d="M10.668 2.99903L10.6757 2.99048" stroke="#212223" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </a>
+                    </face>
+                 </basis>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+</div>

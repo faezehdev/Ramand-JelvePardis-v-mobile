@@ -1,0 +1,94 @@
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+    <member request="cat" type="tree" name="productCat2" parentid="[##cms.query.catid##]"/>
+ </basis>	
+ <basis core="dbsource" source="basiscore" name="db" lid="2" mid="20" >
+    <member request="navcatid" type="tree" name="nav" parentid="[##cms.query.catid##]"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="20" catid="[##cms.query.catid##]">
+     <member name="productList" type="list" size="320x378"/> 
+</basis>	
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <basis core="print" datamembername="db.nav">
+        <layout>
+            @child
+        </layout>
+        <face filter="parentcatid	=[##cms.query.catid##]">
+            <title>@title </title>
+            <meta name="description" content="@title">
+        </face>
+    </basis>
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputMobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/f-style-mobile.css">
+</head>
+<body class="bg-b4">
+    <main class="productList-Mobile overflow-hidden">
+  <!-- HEADER -->
+  <basis core="call" file="menu-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+  <!-- HEADER -->
+   <div class="ProductLists w-full flex flex-col justify-start items-start mt-[5em]">
+    <div class="TitleP mx-auto w-[90%] flex justify-center items-center">
+        <div class="navigation w-full flex justify-center items-center gap-2">
+            <span class="Item font-Roboto500 text-sm leading-16.41 font-medium text-b14">
+                Product Category
+            </span>
+            <span class="Item font-Roboto500 text-sm leading-16.41 font-medium text-b14">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 15L8 8L1 1" stroke="#F6F8F8"/>
+                    </svg>
+            </span>
+            <basis core="print" datamembername="db.nav">
+                <layout>
+                    @child
+                </layout>
+                <face filter="parentcatid=[##cms.query.catid##]">
+            <h1 class="Item font-Roboto500 text-sm leading-16.41 font-medium text-b14">
+                @title
+            </h1>
+                </face>
+            </basis>
+        </div>
+
+    </div>
+    <div class="Products w-[90%] mx-auto flex flex-col justify-start items-start mt-[4em] gap-[2.5em] mb-[3em]">
+        <basis core="print" datamembername="db.productList">
+            <layout>
+                @child
+            </layout>
+            <face>
+        <a href="@link" alt="@title" title="@title"  class="Product w-full flex justify-center items-start ">
+            <div class="Product w-full h-[499px] group
+            flex justify-center items-center relative flex-col">
+                <div class="IMG w-full overflow-hidden h-full flex justify-end items-end relative">
+                    <img src="@00320X00378prp" alt="@title" title="@title"  class=" h-full duration-[.8s]
+                    w-full object-cover">
+                    <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
+                    left-0 right-0 h-full w-full"></div>
+                </div>
+                <div class="Title overflow-hidden w-full flex justify-start items-center py-[1em]">
+                    <h2 class="font-IRANSansWeb400 translate-y-[100%] opacity-0
+                     font-normal duration-[.8s] delay-[1s]
+                     text-base leading-25.04 text-b2">
+                       @title
+                    </h2>
+                </div>
+            
+            </div>
+           </a>
+            </face>
+        </basis>
+    
+           
+    </div>
+   
+<basis core="call" file="footer-v-mobile.inc" pageindex="[##cms.cms.pageindex##]"  />
+   </div>
+    </main>
+    <basis core="call" file="script-mobile.inc" />
+    <script src="[##cms.cms.cdn##]/js/productListMobile.js"></script>
+</body>
+</html>

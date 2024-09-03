@@ -1,0 +1,365 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360585">
+    <member name="defContent" type="view"/> 
+</basis>
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360585">
+   <member name="text" type="view" postsql="select * from [db.text] where TypeID=250"/> 
+</basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2360585"> 
+   <member name="defGallery" type="list" format="4"/> 
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+   <member request="cat" type="tree" name="product-desc" parentid="209904"
+    postsql="select * from [db.product-desc] where parentid=209904"/>
+</basis>
+<basis core="dbsource" source="basiscore" name="db" lid="1" mid="20" > 
+   <member request="cat" type="tree" name="productCat1" parentid="209914"
+    postsql="select * from [db.productCat1] where parentid=209914"/>
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رامند جلوه پردیس</title>
+    <meta name="description" content="رامند جلوه پردیس">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/swiper.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputMobile.css">
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/f-style-mobile.css">
+</head>
+<body>
+    <main class="Home-Mobile">
+         <!-- HEADER -->
+         <basis core="call" file="menu-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
+         <!-- HEADER -->
+        <div class="Section-1 sec  w-full flex justify-start items-start ">
+            <div class="Slider_Container w-full relative h-screen">
+                <div class="swiper-first flex w-full  overflow-hidden h-full">
+                    <div class="swiper-wrapper w-full">
+                    
+                        <div class="swiper-slide w-full relative h-full">
+                            <basis core="print" datamembername="db.defGallery">
+                                <layout>
+                                    @child
+                                </layout>
+                                <face filter="ord=50">
+                            <img src="@largeIMG" alt="ramandjelvePardis" title="ramandjelvePardis" class="w-full object-cover h-full">
+                                </face>
+                            </basis>
+                            <div class="Overlay absolute z-2 left-0 top-0 flex justify-start
+                            items-center  w-full h-full ">
+                                <div class="Box w-full flex flex-col justify-center items-start
+                                ">
+                                    <div class="title w-[95%] mr-auto flex justify-start items-start
+                                    overflow-hidden py-[.5em]">
+                                        <h1 class="font-IRANSansWeb300 text-2xl translate-y-[100%] duration-[.8s]
+                                        opacity-0
+                                        font-light leading-37.57 text-b14 text-right">   
+                                            شرکت <span class="Color font-IRANSansWeb300 font-light
+                                            text-right text-2xl leading-37.57
+                                            text-yellow1">
+                                                رامند
+                                            </span>
+                                                جلوه پردیس
+                                        </h1>
+                                    </div>
+                                    <div class="Text w-[95%] mr-auto flex flex-col justify-start items-start overflow-hidden
+                                    py-[.5em]">
+                                    <basis core="print" datamembername="db.defContent">
+                                        <layout>
+                                            @child
+                                        </layout>
+                                        <face filter="TypeID=129"> 
+                                    <p class="font-IRANSansWeb400 text-sm translate-y-[100%] duration-[.8s]
+                                    opacity-0
+                                    font-normal leading-24 text-b14 text-right"> 
+                                    @largetext
+                                </p>
+                                        </face>
+                                    </basis>
+                                        <div class="ShowMore w-auto flex justify-start items-start mt-[.8em]
+                                        overflow-hidden">
+                                            <a href="محصولات" title="محصولات" alt="محصولات" class="font-IRANSansWeb400 text-sm translate-y-[100%] duration-[.8s]
+                                            opacity-0
+                                            font-normal leading-21.91 text-b14 text-right border-b-[1px]
+                                            border-b-white pb-[.2em] ">
+                                                محصولات
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="Section-2 sec w-full flex justify-start items-start">
+            <div class="About_Us w- w-full flex flex-col bg-b1 pb-[1.5em]
+            justify-start items-start ">
+                <div class="Titlep  w-full mx-auto py-[2.5em] flex overflow-hidden
+                
+                justify-center items-center">
+                    <h2 class="font-medium Roboto500 text-sm translate-y-[100%] opacity-0 duration-[.8s]
+                    leading-16.41 text-b4 text-center">
+                        About Us
+                    </h2>
+                </div>
+                <div class="Box-About  w-[90%] mx-auto flex flex-col justify-start items-center">
+                    <basis core="print" datamembername="db.defGallery">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="ord=2">
+                    <div class="IMG w-[90%] flex justify-center items-center overflow-hidden">
+                        <img src="@largeIMG" alt="ramandjelvePardis" title="ramandjelvePardis" class="w-full object-cover duration-[.8s]">
+                    </div>
+                        </face>
+                    </basis>
+                    <div class="Text w-[90%] mx-auto  flex overflow-hidden mt-[1.5em]
+                    justify-center items-center flex-col">
+                    <basis core="print" datamembername="db.text">
+                        <layout>
+                            @child
+                        </layout>
+                        <face filter="RowNumber=1"> 
+                        <p class="font-IRANSansWeb400 font-normal translate-y-[100%]
+                        duration-[.8s] opacity-0
+                        leading-18.78 text-xs text-gray3 text-center">
+                        @largetext
+                    </p>
+                        </face>
+                    </basis>
+                    </div>
+                    <div class="ShowMore w-auto flex justify-center overflow-hidden
+                    items-center mt-[1em]">
+                        <a href="درباره-ما" title="درباره‌ما" alt="درباره‌ما"   class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                        font-normal leading-18.78 text-b6
+                        border-b-[1px] border-b-[b6] pb-[.2em]">
+                            دربار‌ه‌ی ما بیشتر بدانید
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <!-- <div class="Section-3 sec w-full flex justify-start items-start border-b-[1px] border-b-b2">
+            <div class="Projects w-[90%] mx-auto  justify-center flex flex-col mt-[4em] pb-[3em]
+            items-center gap-[1.8em]">
+                <div class="Project w-full flex flex-col gap-2">
+                    <div class="IMG w-full flex justify-center overflow-hidden items-center">
+                        <img src="images/p1.png" alt="" class="w-full object-cover duration-[.8s]">
+                    </div>
+                    <div class="Title w-full flex justify-start items-center overflow-hidden
+                    duration-[.8s]">
+                        <h3 class="font-IRANSansWeb500  translate-y-[100%] opacity-0
+                        font-medium text-sm leading-21.91 tex-b4 ">
+                            پروژه‌ی یک
+                        </h3>
+                    </div>
+                    <div class="ShowMore w-auto ml-auto flex justify-start overflow-hidden
+                    items-center ">
+                    <a href="" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                    font-normal leading-18.78 text-b6
+                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                    مشاهده‌ی پروژه
+                    </a>
+                </div>
+                </div>   <div class="Project w-full flex flex-col gap-2">
+                    <div class="IMG w-full flex justify-center overflow-hidden items-center">
+                        <img src="images/p1.png" alt="" class="w-full object-cover duration-[.8s]">
+                    </div>
+                    <div class="Title w-full flex justify-start items-center overflow-hidden
+                    duration-[.8s]">
+                        <h3 class="font-IRANSansWeb500  translate-y-[100%] opacity-0
+                        font-medium text-sm leading-21.91 tex-b4 ">
+                            پروژه‌ی یک
+                        </h3>
+                    </div>
+                    <div class="ShowMore w-auto ml-auto flex justify-start overflow-hidden
+                    items-center ">
+                    <a href="" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                    font-normal leading-18.78 text-b6
+                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                    مشاهده‌ی پروژه
+                    </a>
+                </div>
+                </div>
+                <div class="Project w-full flex flex-col gap-2">
+                    <div class="IMG w-full flex justify-center overflow-hidden items-center">
+                        <img src="images/p1.png" alt="" class="w-full object-cover duration-[.8s]">
+                    </div>
+                    <div class="Title w-full flex justify-start items-center overflow-hidden
+                    duration-[.8s]">
+                        <h3 class="font-IRANSansWeb500  translate-y-[100%] opacity-0
+                        font-medium text-sm leading-21.91 tex-b4 ">
+                            پروژه‌ی یک
+                        </h3>
+                    </div>
+                    <div class="ShowMore w-auto ml-auto flex justify-start overflow-hidden
+                    items-center ">
+                    <a href="" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                    font-normal leading-18.78 text-b6
+                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                    مشاهده‌ی پروژه
+                    </a>
+                </div>
+                </div>
+                <div class="Project w-full flex flex-col gap-2">
+                    <div class="IMG w-full flex justify-center overflow-hidden items-center">
+                        <img src="images/p1.png" alt="" class="w-full object-cover duration-[.8s]">
+                    </div>
+                    <div class="Title w-full flex justify-start items-center overflow-hidden
+                    duration-[.8s]">
+                        <h3 class="font-IRANSansWeb500  translate-y-[100%] opacity-0
+                        font-medium text-sm leading-21.91 tex-b4 ">
+                            پروژه‌ی یک
+                        </h3>
+                    </div>
+                    <div class="ShowMore w-auto ml-auto flex justify-start overflow-hidden
+                    items-center ">
+                    <a href="" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                    font-normal leading-18.78 text-b6
+                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                    مشاهده‌ی پروژه
+                    </a>
+                </div>
+                </div>
+            
+            </div>
+        </div> -->
+        <!-- <div class="Section-4 sec w-full flex justify-start items-start">
+            <div class="Clr-Container w-full h-[100vh]
+            flex-col flex justify-between items-center">
+            <div class="Titlep w-auto mx-auto  flex overflow-hidden
+            h-[15%]
+            justify-center items-center">
+                <h4 class="font-medium Roboto500 text-sm translate-y-[100%] opacity-0 duration-[.8s]
+                leading-16.41 text-b4 text-center">
+                Projects
+                </h4>
+            </div>
+            <div class="Text w-[80%]  mt-[2.5em] flex overflow-hidden h-[70%] 
+                    justify-center items-center flex-col">
+                    <p class="font-IRANSansWeb400 font-normal translate-y-[100%]
+                    duration-[.8s] opacity-0
+                    leading-25.04 text-base text-b3 text-center">
+                    متخصص در دو صنعت سنگ و چوب، با افتخار تجربه‌ی خود را از به ‌کارگیری خلاقیت، زیبایی و استحکام در معماری نوین با شما به اشتراک میگذارد.
+                </p>
+                <span class="font-IRANSansWeb400 mt-[2em]
+                    text-xs leading-18.78 font-normal
+                text-b3">
+                    تمرکز بر پروژه‌های سنگ و چوب
+                </span>
+            </div>
+            <div class="ShowMore  h-[15%] w-auto flex justify-center overflow-hidden
+                    items-center">
+                    <a href="" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                        translate-y-[100%] opacity-0
+                    font-normal leading-18.78 text-b6
+                    border-b-[1px] border-b-[b6] pb-[.2em]">
+                    مشاهده‌ی همه‌ی پروژه‌ها
+                    </a>
+            </div>
+            
+        </div>
+        </div> -->
+        <div class="Section-5 sec w-full flex justify-start items-start">
+            <basis core="print" datamembername="db.defGallery">
+                <layout>
+                    @child
+                </layout>
+                <face filter="ord=52">
+            <div class="IMG-c w-full flex justify-center items-center overflow-hidden">
+            <img src="@largeIMG" alt="ramandjelvePardis" title="ramandjelvePardis" class="w-max duration-[.8s] object-cover h-full">
+            </div>
+                </face>
+            </basis>
+        </div>
+        <div class="Section-6 sec w-full flex justify-start items-start">
+            <div class="Pro-Title w-full flex-col flex bg-b1 py-[2em]
+            justify-center items-center gap-4">
+            <div class="Titlep w-auto mx-auto flex overflow-hidden
+            justify-center items-center">
+                <h5 class="font-medium Roboto500 text-sm 
+                translate-y-[100%] opacity-0 duration-[.8s]
+                leading-16.41 text-b4 text-center">
+                Products
+                </h5>
+            </div>
+            <div class="Text w-[80%] mt-[.5em] flex overflow-hidden
+            justify-center items-center flex-col">
+            <basis core="print" datamembername="db.product-desc">
+                <layout>
+                    @child
+                </layout>
+                <face>
+                <p class="font-IRANSansWeb400 font-normal translate-y-[100%]
+                duration-[.8s] opacity-0
+                leading-18.78 text-xs text-b6 text-center">
+                @urldescription
+            </p>
+                </face>
+            </basis>
+        </div>
+            </div>
+        </div>
+        <div class="Section-7 sec w-full flex justify-start items-start mb-[2em]">
+            <div class="Pro-Container w-[90%] mx-auto flex flex-col justify-between items-center">
+                <div class="Products flex w-full gap-[1.8em] flex-col justify-center items-center
+                 mt-[1.8em] pb-[1.5em] mb-[1em]">
+                 <basis core="print" datamembername="db.productCat1">
+                    <layout>
+                        @child
+                    </layout>
+                    <face>
+                    <a href="@link" alt="@title" title="@title" class="Product w-full flex justify-center items-start ">
+                    <div class="Product w-full  group
+                    flex justify-center items-center relative">
+                        <div class="IMG w-full overflow-hidden flex justify-end items-end">
+                            <img src="[##cms.cms.cdn##]/images/@catid.jpg" alt="@title" title="@title" class="  duration-[.8s]
+                            w-full object-cover">
+                        </div>
+                        <div class="Overlay absolute left-0 bottom-0 z-1 w-full h-full 
+                        group-hover:bg-[#0000002c] duration-[.8s]
+                    flex justify-start items-end">
+                            <div class="Title  w-full flex mb-[10%] justify-start items-center py-[1.8em]">
+                                <h6 class="font-IRANSansWeb500 font-medium mr-[1.8em]
+                                text-base leading-25.04 text-b1">
+                                   @title
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="bg-Color absolute bottom-0 bg-white z-3 duration-[.8s]
+                        left-0 right-0 h-full w-full"></div>
+                    </div>
+                </a>
+                    </face>
+                 </basis>
+                
+                </div>
+                <div class="ShowMore  h-[10%] w-auto flex justify-center overflow-hidden
+                items-center">
+                <a href="محصولات" title="محصولات" alt="محصولات" class="font-IRANSansWeb400 text-xs duration-[.8s]
+                    translate-y-[100%] opacity-0
+                font-normal leading-18.78 text-b6
+                border-b-[1px] border-b-[b6] pb-[.2em]">
+                مشاهده‌ی همه‌ی محصولات
+                </a>
+        </div>
+            </div>
+
+
+        </div>
+<basis core="call" file="footer-Def-mobile.inc" pageindex="[##cms.cms.pageindex##]"  />
+    </main>
+  <basis core="call" file="script-mobile.inc" />
+<script src="[##cms.cms.cdn##]/js/homeMobile.js"></script>
+</body>
+</html>
