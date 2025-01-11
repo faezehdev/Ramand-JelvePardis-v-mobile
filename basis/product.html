@@ -13,6 +13,9 @@
 <basis core="dbsource" name="db" source="media" lid="1" sourcemid="20" usedforid="[##cms.query.id##]"> 
    <member name="cataloge" type="list" format="9" /> 
 </basis>
+<basis core="dbsource" source="basiscore" name="json" lid="1" usedforid="[##cms.query.id##]" > 
+    <member request="json-ld" type="scalar" name="fq" /> 
+</basis>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
@@ -31,7 +34,7 @@
     <!-- HEADER -->
   <div class="Container-C w-full mx-auto relative">
 
-  <div class="Section-1 sec w-full flex justify-center items-center mt-[6em] ">
+  <div class="Section-1 sec w-full flex justify-center items-center ">
 
     <div class="Banner w-full flex  justify-center items-center relative">
         <basis core="print" datamembername="db.productGallery">
@@ -71,7 +74,7 @@
                      </basis>
                     </div>
                 </div>
-                <div class="bg-Color absolute bottom-0 bg-white z-3 duration-[.8s]
+                <div class="bg-Color absolute top-0 bg-white z-3 duration-[.8s]
                 left-0 right-0 h-full w-full">
             </div>
     </div>
@@ -104,7 +107,7 @@
                 <div class="IMG w-full overflow-hidden flex relative justify-end items-end">
                     <img src="@largeIMG" alt=" [##db.title.Answer##]" title=" [##db.title.Answer##]" class="  duration-[.8s]
                     w-full object-cover">
-                    <div class="bg-Color absolute bottom-0 bg-white z-3 duration-[.8s]
+                    <div class="bg-Color absolute top-0 bg-white z-3 duration-[.8s]
                     left-0 right-0 h-full w-full">
                 </div>
             </div>
@@ -180,5 +183,8 @@
     </main>
     <basis core="call" file="script-mobile.inc" />
     <script src="[##cms.cms.cdn##]/js/productMobile.js"></script>
+    <script type="application/ld+json"> 
+        [##json.fq.column1##] 
+        </script>
 </body>
 </html>

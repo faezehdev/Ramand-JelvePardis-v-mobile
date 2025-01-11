@@ -1,0 +1,143 @@
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360607"> <member name="aboutus" type="view"/> </basis>
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2360607"> <member name="image-about" type="list" format="4"/> </basis> 
+<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2360607"> <member name="video-about" type="list" format="3"/> </basis>
+ <basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360620"> <member name="history" type="view"/> </basis>	
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2360624"> <member name="project" type="view"/> </basis>	
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره ما</title>
+
+    <meta name="description" content="درباره رامند جلوه پردیس" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputMobile.css" />
+</head>
+
+<body>
+    <main class="aboutUs bg-b4">
+        <basis core="call" file="menu-mobile.inc" />
+        <basis core="print" datamembername="db.image-about">
+            <layout>
+                <div class="section1 pt-36 relative flex justify-center items-center" dir="rtl">
+                    @child
+                </div>
+            </layout>
+            <face filter="ord=51">
+                <div class="imgS w-full">
+                    <img class="w-full" src="/@largeIMG" alt="@name" title="@name" />
+                </div>
+                <div class="title py-5 text-center absolute left-0 right-0">
+                    <h1 class="font-IRANSansWeb300 text-2xl scrollToTop text-b7">
+                    @name
+                    </h1>
+                    <p class="font-IRANSansWeb400 text-sm text-b7 text-center">
+                     @description
+                    </p>
+                </div>
+                
+            </face>
+        </basis>
+        <basis core="print" datamembername="db.aboutus">
+            <layout>
+                <div class="section2">
+                    <div class="para py-16 px-4 font-IRANSansWeb400 text-sm text-b1 text-center">
+                    
+                        @child
+                    </div>
+                </div>
+            </layout>
+            <face filter="TypeID=250">
+                @largetext
+            </face>
+        </basis>
+        <section class="section3 mb-16">
+            <div class="inVideo flex justify-center items-center">
+                <basis core="print" datamembername="db.image-about">
+                
+                    <face filter="ord=50">
+                        
+                        <video class="w-full object-cover" poster="/@largeIMG" playsinline loop>
+                    </face>
+                </basis>
+                <basis core="print" datamembername="db.video-about">
+                    <face>
+                        
+                        <source src="/@largeIMG">
+                    </face>
+                </basis>
+                </video>
+                <div class="playbtn absolute cursor-pointer">
+                    <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.5052 20.8829L6.34695 0.543446C5.78791 0.200192 5.14763 0.0128033 4.49222 0.000633091C3.83681 -0.0115371 3.19005 0.151952 2.61872 0.474217C2.05283 0.791476 1.58143 1.25415 1.253 1.81466C0.924563 2.37516 0.750946 3.01327 0.75 3.66337V44.3378C0.754264 45.3129 1.14453 46.2465 1.83502 46.9332C2.5255 47.6199 3.45968 48.0037 4.4322 48C5.111 47.9997 5.77662 47.8121 6.35615 47.4577L39.5052 27.1182C40.038 26.7925 40.4784 26.3349 40.7839 25.7894C41.0895 25.2438 41.25 24.6286 41.25 24.0029C41.25 23.3772 41.0895 22.762 40.7839 22.2164C40.4784 21.6708 40.038 21.2132 39.5052 20.8876V20.8829ZM4.4322 44.2939V3.69337L37.5329 24.0006L4.4322 44.2939Z" fill="#F6F8F8"/>
+                        </svg>
+                        
+                </div>
+            </div>
+        </section>
+        <div class="section4 px-4" dir="rtl">
+            <basis core="print" datamembername="db.history">
+                <face filter="TypeID=150">
+                    <h2 class="font-IRANSansWeb500 scrollToTop text-lg pb-6 border-b text-b7 mb-6">
+                       @Answer
+                    </h2>
+                    
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.history">
+                <layout>
+                    <div class="para scrollToTop font-IRANSansWeb400 text-sm text-right text-b1 mb-6">
+                        
+                        @child
+                    </div>
+                </layout>
+                <face filter="TypeID=250">
+                    <h4 class="font-IRANSansWeb500 text-sm text-b1">
+                        @text
+                    @largetext
+                </face>
+            </basis>
+        </div>
+        <section class="section6 my-16 px-4" dir="rtl">
+            <basis core="print" datamembername="db.project">
+                <layout>
+                    <div class="para scrollToTop font-IRANSansWeb500 text-lg mb-10 text-b7">
+                        @child
+                        
+                    </div>
+                </layout>
+                <face filter="TypeID=128">
+                    @Answer
+                </face>
+            </basis>
+            <basis core="print" datamembername="db.project">
+                <layout>
+                    <ul>
+                        @child
+                        
+                    </ul>
+                </layout>
+                
+                <face filter="TypeID=250">
+                    <li class="grid py-5 first:border-t border-b2 border-b">
+                        <div class="title scrollToTop font-IRANSansWeb400 text-base text-b2">
+                          @largetext
+                        </div>
+                      
+                    </li>
+                    
+                </face>
+            </basis>
+        </section>
+        <basis core="call" file="footer-v-mobile.inc" />
+    </main>
+    <basis core="call" file="script-mobile.inc" />
+
+    <script src="[##cms.cms.cdn##]/_js/playVideo.js"></script>
+    <script src="[##cms.cms.cdn##]/js/aboutUs-mobile.js"></script>
+</body>
+
+</html>

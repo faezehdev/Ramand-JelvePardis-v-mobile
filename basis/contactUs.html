@@ -1,0 +1,205 @@
+
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="10" catid="209938">
+    <member name="list-namayandegi" type="list"/>
+</basis>
+
+<basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9634">
+    <member name="contact" type="view" />
+</basis>
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما</title>
+    <meta name="description" content="تماس با رامند جلوه پردیس" />
+    <link rel="stylesheet" href="[##cms.cms.cdn##]/css/outputMobile.css">
+</head>
+
+<body>
+    <div class="contactUs bg-b4">
+        <basis core="call" file="menu-mobile.inc" />
+
+        <div class="sectionsContainer mt-16 bg-white">
+
+
+            <basis core="repeater" name="rep" datamembername="db.list-namayandegi">    
+                <basis core="dbsource" name="db" source="basiscore" lid="1" mid="10" usedforid="[##rep.current.id##]"> <member name="contactus" type="view"/> </basis>	
+            
+                <section class="py-9">
+                    <div class="title flex items-center gap-x-3">
+                        <basis core="print" datamembername="db.contactus">
+                            <face filter="TypeID=150">
+                                <span class="spColor w-7 block line h-px bg-b3"></span>
+                                <h1
+                                    class=" spColor whitespace-nowrap items-center  flex gap-x-3 font-IRANSansWeb500 text-sm text-b3">
+                                  @Answer
+                                </h1>
+                                
+                                <span class="line spColor block w-full h-px bg-b3"></span>
+                            </face>
+                        </basis>
+                    </div>
+                    <div class="info px-10 mt-6">
+                        <div class="mapS mb-9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.293539265678!2d51.410644!3d35.7927264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e06ee4c24a121%3A0xc4a01e5a6eaf445d!2sRamand%20Co.!5e0!3m2!1sen!2sus!4v1725195860610!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="details">
+                            <basis core="print" datamembername="db.contactus">
+
+                                <face filter="TypeID=150">
+                                    
+                                    <h2 class="mb-2 spColor font-IRANSansWeb500 text-sm text-b3">
+                                        آدرس @Answer
+                                    </h2>
+                                </face>
+                            </basis>
+                            <basis core="print" datamembername="db.contactus">
+                                <layout>
+                                    <div class="address spColor mb-4 flex gap-x-2 spColor font-IRANSansWeb400 text-xs text-b3 text-justify">
+                                    @child
+                                    </div>
+                                </layout>
+                                <face filter="TypeID=244">
+                                    
+                                    <svg width="12" height="19" viewBox="0 0 12 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.9999 7.8C10.9999 11.5556 6.02532 18 6.02532 18C6.02532 18 1.05078 11.5556 1.05078 7.8C1.05078 4.04446 3.27796 1 6.02532 1C8.77269 1 10.9999 4.04446 10.9999 7.8Z"
+                                            stroke="#6B6B6B" />
+                                        <path
+                                            d="M6.02807 8.64727C6.3715 8.64727 6.64988 8.26672 6.64988 7.79727C6.64988 7.32783 6.3715 6.94727 6.02807 6.94727C5.68464 6.94727 5.40625 7.32783 5.40625 7.79727C5.40625 8.26672 5.68464 8.64727 6.02807 8.64727Z"
+                                            fill="#6B6B6B" stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                   @Answer
+                                </face>
+                            </basis>
+                          
+    
+                            <h3 class="mb-2 spColor font-IRANSansWeb500 text-sm text-b3">
+                                راه‌های ارتباطی
+                            </h3>
+                            <ul class="flex justify-between items-center pb-4" dir="rtl">
+                                <basis core="print" datamembername="db.contactus">
+                                    <face filter="TypeID=128">
+                                        <li class="flex gap-x-2 mb-1 items-center">
+                                            <a href="mailto:@Answer" class="spColor font-IRANSansWeb400 text-xs saColor">
+                                                @Answer
+                                            </a>
+                                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.88281 5.00098L10.7671 8.50098L15.6513 5.00098" stroke="#6B6B6B"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M1 13V3C1 1.89543 1.8747 1 2.9537 1L18.5833 1C19.6624 1 20.537 1.89543 20.537 3V13C20.537 14.1046 19.6624 15 18.5833 15H2.9537C1.8747 15 1 14.1046 1 13Z"
+                                                    stroke="#6B6B6B" />
+                                            </svg>
+            
+            
+                                        </li>
+                                        
+                                    </face>
+                                </basis>
+                                <basis core="print" datamembername="db.contactus">
+   
+                                    <face filter="TypeID=240">
+                                        <li class="flex gap-x-2 mb-1 items-center">
+                                            <a href="tel:@Answer" class="font-IRANSansWeb400 text-xs spColor">
+                                                @Answer
+                                            </a>
+                                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.44522 12.6322L8.10163 13.363C10.5714 12.0844 12.097 10.6157 12.9849 8.32624L12.3013 4.54398L13.5935 1L16.9238 1C17.9249 1 18.7133 1.85331 18.5638 2.87431C18.1905 5.42322 17.0899 10.0447 13.8728 13.363C10.4943 16.8477 5.6283 18.3599 2.95023 18.9609C1.91604 19.1931 0.998697 18.3609 0.998697 17.2693L0.998697 13.9869L4.44522 12.6322Z"
+                                                    stroke="#6B6B6B" stroke-width="0.8" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+            
+                                        </li>
+                                        
+                                    </face>
+                                </basis>
+    
+                            </ul>
+                            <span class="spColor line block w-full h-px "></span>
+                            <div class="social mt-4 spColor flex items-center spColor justify-between">
+                                <p>
+                                    ما را در شبکه‌های اجتماعی دنبال کنید
+                                </p>
+                                <ul class="flex gap-x-2">
+                                    <basis core="print" datamembername="db.contactus">
+                                        <face filter="text='واتس اپ'">
+                                            
+                                            <li>
+                                                <a href="https://wa.me/@largetext" title="whatsap">
+                                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.44522 12.6322L8.10163 13.363C10.5714 12.0844 12.097 10.6157 12.9849 8.32624L12.3013 4.54398L13.5935 1L16.9238 1C17.9249 1 18.7133 1.85331 18.5638 2.87431C18.1905 5.42322 17.0899 10.0447 13.8728 13.363C10.4943 16.8477 5.6283 18.3599 2.95023 18.9609C1.91604 19.1931 0.998697 18.3609 0.998697 17.2693L0.998697 13.9869L4.44522 12.6322Z"
+                                                            stroke="#6B6B6B" stroke-width="0.8" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+            
+                                                </a>
+                                            </li>
+                                        </face>
+                                    </basis>
+                                    <basis core="print" datamembername="db.contact">
+
+                                        <face filter="text='تلگرام'">
+                                        
+                                            <li>
+                                                <a href="https://t.me/@largetext" title="telegram">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.4515 6.0542L3.58594 10.2187L7.69325 11.6068M15.4515 6.0542L7.69325 11.6068M15.4515 6.0542L11.8006 15.7713L7.69325 11.6068"
+                                                            stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M9.97501 19.0092C15.0159 19.0092 19.1024 14.8659 19.1024 9.75487C19.1024 4.64381 15.0159 0.500488 9.97501 0.500488C4.93411 0.500488 0.847656 4.64381 0.847656 9.75487C0.847656 14.8659 4.93411 19.0092 9.97501 19.0092Z"
+                                                            stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+            
+                                                </a>
+                                            </li>
+                                            
+                                        </face>
+                                    </basis>
+                                    <basis core="print" datamembername="db.contact">
+                                        <face filter="text='اینستاگرام'">
+                                            <li>
+                                                <a href="https://instagram.com/@largetext" title="instagram">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.1269 14.3575C12.3673 14.3575 14.1835 12.5159 14.1835 10.2444C14.1835 7.97283 12.3673 6.13135 10.1269 6.13135C7.88651 6.13135 6.07031 7.97283 6.07031 10.2444C6.07031 12.5159 7.88651 14.3575 10.1269 14.3575Z"
+                                                            stroke="#6B6B6B" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M1 14.3582L1 6.13205C1 3.29258 3.27026 0.990723 6.07075 0.990723L14.184 0.990723C16.9844 0.990723 19.2547 3.29258 19.2547 6.13205V14.3582C19.2547 17.1976 16.9844 19.4995 14.184 19.4995H6.07075C3.27026 19.4995 1 17.1976 1 14.3582Z"
+                                                            stroke="#6B6B6B" />
+                                                        <path d="M15.707 4.60056L15.718 4.58838" stroke="#6B6B6B"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+            
+                                                </a>
+                                            </li>
+                                            
+                                        </face>
+                                    </basis>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </basis>
+        
+        </div>
+        <basis core="call" file="footer-v-mobile.inc" />
+    </div>
+    <basis core="call" file="script-mobile.inc" />
+    <script src="[##cms.cms.cdn##]/js/contact-mobile.js"></script>
+</body>
+
+</html>

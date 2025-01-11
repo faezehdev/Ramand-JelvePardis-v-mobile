@@ -2,3 +2,15 @@
 .productList-Mobile .navigation{
     direction: ltr;
 }
+main.productCat2-Mobile ,main.productCat1-Mobile,
+main.productList-Mobile .ProductLists ,
+main.Product-Mobile .Section-1 {
+    padding-top: 8em;
+}
+main.productCat2-Mobile,main.productCat1-Mobile,main.productList-Mobile ,
+main.Product-Mobile {
+    overflow: hidden;
+}
+main.productCat2-Mobile .Products{
+    margin-bottom: 1em !important;
+}

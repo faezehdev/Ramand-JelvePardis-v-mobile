@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <basis core="print" datamembername="db.productCat2">
+    <basis core="print" datamembername="db.productCat3">
         <layout>
             @child
         </layout>
@@ -33,7 +33,7 @@
     <!-- HEADER -->
     <basis core="call" file="menu-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
     <!-- HEADER -->
-   <div class="ProductCats w-full flex flex-col justify-start items-start mt-[5em]">
+   <div class="ProductCats w-full flex flex-col justify-start items-start ">
     <div class="TitleP mx-auto w-[90%] flex justify-center items-center">
 
             <basis core="print" datamembername="db.productCat2">
@@ -83,17 +83,12 @@
                             </h2>
                         </div>
                     </div>
-                    <div class="bg-Color absolute bottom-0 bg-b4  z-3 duration-[.8s]
+                    <div class="bg-Color absolute top-0 bg-b4  z-3 duration-[.8s]
                     left-0 right-0 h-full w-full"></div>
                 </div>
             
             </div>
-            <a href="[##cms.cms.cdn##]images/@catid.pdf" 
-            alt="@title" title="@title"  class="ml-auto font-IRANSansWeb400 text-[11px] duration-[.8s]  py-[.8em] 
-            font-normal leading-[17.22px] text-b1
-            border-b-[1px] border-b-[b6] pb-[.2em]">
-            دانلود کاتالوگ محصول
-            </a>
+         
            </div>
             </face>
         </basis>
@@ -101,6 +96,21 @@
            
     
     </div>
+    
+    <basis core="print" datamembername="db.productCat2">
+        <layout>
+            @child
+        </layout>
+        <face filter="catid=[##cms.query.catid##]">
+            <a href="[##cms.cms.cdn##]/images/@catid.pdf" download=""
+            class="mx-auto font-IRANSansWeb400 text-[11px] duration-[.8s]  py-[2em] mb-[3em]
+           font-normal leading-[17.22px] text-b1
+           border-b-[1px] border-b-[b6] pb-[.2em]">
+           دانلود کاتالوگ‌ محصولات
+           </a>
+   
+        </face>
+    </basis>
     <basis core="call" file="footer-v-mobile.inc" pageindex="[##cms.cms.pageindex##]"  />
    </div>
     </main>

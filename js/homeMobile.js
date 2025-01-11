@@ -1,16 +1,49 @@
 
-     var swiper = new Swiper('.swiper-first', {
-        loop: true,
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-       speed:4000,
-      });
+gsap.to(".preLoad", {
+  scale: 0,
+  delay: 5,
+  ease: "expo.in",
+});
+gsap.to(".blinder", {
+  scaleY: 0,
+  stagger: 0.15,
+
+  delay: 0.8,
+  duration: 2,
+  ease: "expo.in",
+});
+gsap.to(".secondP .char", {
+  y: 0,
+  opacity: 1,
+  stagger: 0.05,
+  delay: 1.2,
+  duration: 1.5,
+  ease: "expo.in",
+});
+gsap.to(".firstP .char", {
+  y: 0,
+  opacity: 1,
+  stagger: 0.05,
+  delay: 1.2,
+  duration: 1.5,
+  ease: "expo.in",
+});
+setTimeout(() => {
+  var swiper = new Swiper('.swiper-first', {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+   speed:4000,
+  });
+ }, 4000);
+
+   
 
     gsap.set('.About_Us img',{
       scale:1.1,
